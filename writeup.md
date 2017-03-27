@@ -230,3 +230,16 @@ The sixth image is the only one different than the others. The top five soft max
 The remaining image predictions are very similar to the first 5.  Clearly, the model has an issue with the web images, which may be related to the limitede ability of the accuracy of the model to top 0.9, or it could be that the model doesn't generalize well.  given that some of the images are very clear and simple geometrically, the model should have faired better.
 
 It is possible that the same data has a small number of examples of particular signs.  These could be effectiing the model, and could be handled by adding more data for those particular signs, or cleaning up the training data's examples of those signs.
+
+In attempting to visualize the Network State with "Step 4: Visualize the Neural Network's State with Test Images", I found myself at a complete roadblock based on arameter two of the provided function.  the description says:
+
+># tf_activation: should be a tf variable name used during your training procedure that represents the calculated state of a specific weight layer
+
+However, nothing I provided to that variable restulted in the same error:
+NameError                                 Traceback (most recent call last)
+<ipython-input-98-0b3f80d94e6b> in <module>()
+----> 1 outputFeatureMap(images_array,conv2)
+
+NameError: name 'conv2' is not defined
+
+In this case, conv2 _is_ defined, it is the convolution layer of the network.  I'm not sure what should be provided here to make this function run based on the provided description.
