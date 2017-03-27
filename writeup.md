@@ -229,7 +229,7 @@ It is possible that the same data has a small number of examples of particular s
 
 In attempting to visualize the Network State with "Step 4: Visualize the Neural Network's State with Test Images", I found myself at a complete roadblock based on arameter two of the provided function.  the description says:
 
-># tf_activation: should be a tf variable name used during your training procedure that represents the calculated state of a specific weight layer
+> tf_activation: should be a tf variable name used during your training procedure that represents the calculated state of a specific weight layer
 
 However, nothing I provided to that variable restulted in the same error:
 NameError                                 Traceback (most recent call last)
