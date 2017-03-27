@@ -231,12 +231,12 @@ In attempting to visualize the Network State with "Step 4: Visualize the Neural 
 
 >tf_activation: should be a tf variable name used during your training procedure that represents the calculated state of a specific weight layer
 
-However, nothing I provided to that variable restulted in the same error:
-NameError                                 Traceback (most recent call last)
-<ipython-input-98-0b3f80d94e6b> in <module>()
-----> 1 outputFeatureMap(images_array,conv1_W)
+However, nothing I provided to that variable restulted in anything but the following error:
+> NameError                                 Traceback (most recent call last)
+> <ipython-input-98-0b3f80d94e6b> in <module>()
+> ----> 1 outputFeatureMap(images_array,conv1_W)
 
-NameError: name 'conv1_W' is not defined
+> NameError: name 'conv1_W' is not defined
 
 In this case, conv1_W _is_ defined - it is the weights tensor for the first convolution layer of the network.  I'm not sure what should be provided here to make this function run based on the provided description.
 
