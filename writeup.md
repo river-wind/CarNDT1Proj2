@@ -27,10 +27,9 @@ The goals / steps of this project are the following:
 [image8]: ./examples/german-road5.jpg "Traffic Sign 5"
 [image9]: ./examples/german-road6.jpg "Traffic Sign 6"
 [image10]: ./examples/german-road7.jpg "Traffic Sign 7"
-[image11]: ./examples/german-road8.jpg "Traffic Sign 8"
-[image12]: ./examples/german-road9.jpg "Traffic Sign 9"
-[image13]: ./examples/german-road91.jpg "Traffic Sign 10"
-[image14]: ./examples/german-road91_gray.jpg "Traffic Sign 11"
+[image11]: ./examples/german-road9.jpg "Traffic Sign 9"
+[image12]: ./examples/german-road91.jpg "Traffic Sign 10"
+[image13]: ./examples/german-road91_gray.jpg "Traffic Sign 11"
 
 ## Rubric Points
 ###Here I will consider the [rubric points](https://review.udacity.com/#!/rubrics/481/view) individually and describe how I addressed each point in my implementation.  
@@ -135,8 +134,8 @@ Had I been able to identify a model which would overfit, I would have added drop
 Here are the 9 German traffic signs that I found on the web:
 
 ![alt text][image4] ![alt text][image5] ![alt text][image6] 
-![alt text][image7] ![alt text][image9] ![alt text][image10]
-![alt text][image11] ![alt text][image12] ![alt text][image13]
+![alt text][image7] ![alt text][image8] ![alt text][image9]
+![alt text][image10] ![alt text][image11] ![alt text][image12]
 
 One of the difficulties of selecting the images is that not just any German traffic sign would work.  Because the training set only identifies 43 types of signs, the signs which could be successfully tested must fall into that set of 43.  MAny possible signs would not be possible to match, and could not be included in the test.  For that reason, the first step was to learn what those 43 German Traffic signs looked like, and save a handful of them from the web.  I then opened each in Paint.net and modified them to 32x32 square color images (I later realized I could have done this in code with cv2, but having the images pre-cut made later processing faster).
 
